@@ -385,7 +385,7 @@ st.sidebar.write("📈 Excel Workbooks")
 st.sidebar.write("📋 JSON Documents")
 
 # MAIN HEADER 
-st.markdown("# 📊 Dataset Overview")
+st.markdown("# Dataset Overview")
 st.markdown(
     "<div class='subtitle'>Understand your dataset in seconds.</div>",
     unsafe_allow_html=True
@@ -497,5 +497,6 @@ if uploaded_file:
 else:
 
     st.info("📤 Upload a dataset to begin your analysis journey.")
+
 
 
