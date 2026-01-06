@@ -373,7 +373,7 @@ def data_summary(df):
     }
 
 # SIDEBAR 
-st.sidebar.markdown("## 🔴 Data Insight Platform")
+st.sidebar.markdown("## 🔴 Data Analyzer Platfor")
 st.sidebar.markdown(
     "<span style='color:#334155; font-weight:600; font-size:15px'>Professional dataset analysis and profiling tool</span>",
     unsafe_allow_html=True
@@ -387,7 +387,7 @@ st.sidebar.write("📋 JSON Documents")
 # MAIN HEADER 
 st.markdown("# 📊 Dataset Overview")
 st.markdown(
-    "<div class='subtitle'>Upload structured data to generate instant quality metrics, schema details, and statistical insights with precision and clarity.</div>",
+    "<div class='subtitle'>Upload structured datasets to check rows, columns, missing values, and schema details—ideal for students preparing data for analysis or model training..</div>",
     unsafe_allow_html=True
 )
 
@@ -495,4 +495,5 @@ if uploaded_file:
     st.markdown("</div>", unsafe_allow_html=True)
 
 else:
+
     st.info("📤 Upload a dataset to begin your analysis journey.")
