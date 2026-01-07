@@ -455,7 +455,7 @@ if uploaded_file:
 
     # SCHEMA 
     st.markdown("<div class='section card'>", unsafe_allow_html=True)
-    st.markdown("### 📋 Schema & Data Types")
+    st.markdown("### Schema & Data Types")
     st.dataframe(
         pd.DataFrame.from_dict(
             summary["data_types"],
@@ -481,7 +481,7 @@ if uploaded_file:
 
     # STATISTICS
     st.markdown("<div class='section card'>", unsafe_allow_html=True)
-    st.markdown("### 📊 Statistical Summary")
+    st.markdown("### Statistical Summary")
     st.dataframe(
         pd.DataFrame(summary["statistical_summary"]),
         use_container_width=True
@@ -490,13 +490,14 @@ if uploaded_file:
 
     # PREVIEW 
     st.markdown("<div class='section card'>", unsafe_allow_html=True)
-    st.markdown("### 👁️ Data Preview")
+    st.markdown("### Data Preview")
     st.dataframe(df.head(25), use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 else:
 
     st.info("📤 Upload a dataset to begin your analysis journey.")
+
 
 
 
