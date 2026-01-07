@@ -447,7 +447,7 @@ if uploaded_file:
             f"""
             <div class="metric">
                 <h1>{len(df.select_dtypes(include='number').columns)}</h1>
-                <p>Total Numerical Columns</p>
+                <p>Numerical Columns</p>
             </div>
             """,
             unsafe_allow_html=True
@@ -468,7 +468,7 @@ if uploaded_file:
 
     # DATA QUALITY 
     st.markdown("<div class='section card'>", unsafe_allow_html=True)
-    st.markdown("### ✓ Data Quality Report")
+    st.markdown("### Data Quality Report")
     st.dataframe(
         pd.DataFrame.from_dict(
             summary["missing_values"],
@@ -497,6 +497,7 @@ if uploaded_file:
 else:
 
     st.info("📤 Upload a dataset to begin your analysis journey.")
+
 
 
 
